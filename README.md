@@ -48,7 +48,7 @@ Library sizes ranged from ~5.8M to ~21.5M reads, with 17,255–19,621 genes dete
 
 ### PCA
 
-*See `results/figures/01_1_pca_genotype_day.png`.*
+![PCA of gene expression: genotype and differentiation day](results/figures/01_1_pca_genotype_day.png)
 
 PCA was performed on the 2,000 most variable genes. **PC1 (50.5% of variance) corresponds to differentiation day**, with samples ordered by time regardless of genotype — the largest source of variation is differentiation itself. **PC2 (12.6% of variance) corresponds to genotype**, with DMD and CORR samples separating consistently across nearly all time points, indicating a genotype-associated transcriptional signature present throughout differentiation.
 
@@ -56,7 +56,7 @@ PCA was performed on the 2,000 most variable genes. **PC1 (50.5% of variance) co
 
 Differential expression (DMD vs CORR) was performed independently at each time point using PyDESeq2.
 
-*See `results/figures/01_2_volcano_by_day.png`.*
+![Volcano plots of differential expression at each time point](results/figures/01_2_volcano_by_day.png)
 
 | Day | Genes with padj < 0.05 |
 |---|---:|
@@ -92,7 +92,9 @@ The Day 7 GSEA run produced a warning about duplicated values in the ranking, co
 
 ### Pathway trajectories across differentiation
 
-*See `results/figures/02_1_hallmark_heatmap.png` and `results/figures/02_2_temporal_trajectories.png`.*
+![Hallmark pathway enrichment across differentiation](results/figures/02_1_hallmark_heatmap.png)
+
+![Temporal trajectories of key Hallmark pathways](results/figures/02_2_temporal_trajectories.png)
 
 Tracking pathway enrichment across all 5 time points reveals that different biological programs follow **distinct temporal trajectories**:
 
