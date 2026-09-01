@@ -1,0 +1,45 @@
+DATA SOURCE
+===========
+
+The RNA-seq data used in this project are not included in this repository
+due to their size, and must be downloaded separately before running the
+notebooks.
+
+Source: Gene Expression Omnibus (GEO)
+Series accession: GSE189053
+Series page: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE189053
+
+Direct download (all 40 samples, single .tar archive):
+https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE189053&format=file
+
+Series title:
+Transcriptome analysis of human DMD-K2957fs and CRISPR-corrected
+(CORR-K2957fs) myogenic cultures during secondary myogenic differentiation.
+
+Original publication:
+Morera C, Kim J, Paredes-Redondo A, Nobles M, Rybin D, Kowala A, Meng J,
+Liu P, Morgan JE, Muntoni F, Christoforou N, Owens J, Tinker A, Lin Y.
+"CRISPR-mediated correction of skeletal muscle Ca2+ handling in a novel
+DMD patient-derived pluripotent stem cell model."
+Neuromuscul Disord. 2022 Dec;32(11-12):908-922. PMID: 36418198.
+
+Contributed by: Pfizer Inc., Rare Disease Research Unit, Cambridge, MA, USA.
+
+Overall design:
+RNA sequencing was performed on DMD-K2957fs and CRISPR-corrected
+(CORR-K2957fs) myogenic cultures during secondary differentiation at
+5 time points (Day -1, 0, 2, 5 and 7). Four biological replicates were
+performed per condition. 40 samples in total.
+
+File format:
+Each sample is provided as a compressed archive containing the raw
+Salmon quantification output (transcript-level quant.sf file, not
+gene-level counts). See 01_data_exploration.ipynb for the
+transcript-to-gene aggregation step.
+
+Instructions:
+1. Download the .tar archive from the direct download link above
+   (named GSE189053_RAW.tar).
+2. Place it directly in this folder (data/raw/).
+3. Run 01_data_exploration.ipynb, which extracts and processes the
+   40 per-sample archives automatically.
